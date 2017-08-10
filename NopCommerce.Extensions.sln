@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Web", "src\Web\", "{6BCBD1A4-6399-4EB7-B537-E119F6AFD8B3}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56332"
+		Debug.AspNetCompiler.PhysicalPath = "src\Web\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56332\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56332"
+		Release.AspNetCompiler.PhysicalPath = "src\Web\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56332\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56332"
+		SlnRelativePath = "src\Web\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{AA9E610D-F540-40E2-9822-CA0A2A4F838F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nop.Plugin.Widgets.CSlider", "src\Plugins\Nop.Plugin.Widgets.CSlider\Nop.Plugin.Widgets.CSlider.csproj", "{C77BD03C-44E2-41C9-AC0D-F4C4EB20C29A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BCBD1A4-6399-4EB7-B537-E119F6AFD8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCBD1A4-6399-4EB7-B537-E119F6AFD8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCBD1A4-6399-4EB7-B537-E119F6AFD8B3}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCBD1A4-6399-4EB7-B537-E119F6AFD8B3}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C77BD03C-44E2-41C9-AC0D-F4C4EB20C29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77BD03C-44E2-41C9-AC0D-F4C4EB20C29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77BD03C-44E2-41C9-AC0D-F4C4EB20C29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77BD03C-44E2-41C9-AC0D-F4C4EB20C29A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C77BD03C-44E2-41C9-AC0D-F4C4EB20C29A} = {AA9E610D-F540-40E2-9822-CA0A2A4F838F}
+	EndGlobalSection
+EndGlobal

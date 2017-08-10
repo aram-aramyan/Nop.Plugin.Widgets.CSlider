@@ -1,0 +1,50 @@
+﻿@model PublicInfoModel
+@using Nop.Web.Framework.UI
+@using Nop.Plugin.Widgets.CSlider.Models
+
+@{
+    Layout = "";
+
+    Html.AddScriptParts("~/Plugins/Widgets.CSlider/Scripts/jquery.cslider.js");
+    Html.AddCssFileParts("~/Plugins/Widgets.CSlider/Content/cslider/css/styles.min.css");
+}
+
+
+@helper RenderSlide(SlideModel slide)
+{
+    <div class="da-slide">
+        <h2>@Html.Raw(slide.Title)</h2>
+        <p>@Html.Raw(slide.Content)</p>
+        <a href="@Html.Raw(slide.Link)" class="da-link">@Html.Raw(slide.ButtonText)</a>
+        @if (!string.IsNullOrEmpty(slide.PictureUrl))
+        {
+            <div class="da-img">
+                <img src="@slide.PictureUrl" alt="@slide.Title" />
+            </div>
+        }
+    </div>
+}
+
+
+<div id="da-slider" class="da-slider">
+    @foreach (var slide in Model.Slides.OrderBy(s => s.Order))
+    {
+        @RenderSlide(slide)
+    }
+
+    <nav class="da-arrows">
+        <span class="da-arrows-prev"></span>
+        <span class="da-arrows-next"></span>
+    </nav>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+
+        $('#da-slider').cslider({
+            autoplay: true,
+            bgincrement: 450
+        });
+
+    });
+</script>

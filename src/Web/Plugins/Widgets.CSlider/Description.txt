@@ -1,0 +1,9 @@
+﻿Group: Widgets
+FriendlyName: Content Slider
+SystemName: Widgets.CSlider
+Version: 1.0
+SupportedVersions: 3.90
+Author: https://github.com/aram-aramyan
+DisplayOrder: 1
+FileName: Nop.Plugin.Widgets.CSlider.dll
+Description: Shows a parallax content slider on the main page

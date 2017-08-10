@@ -1,0 +1,9 @@
+﻿Group: Pages
+FriendlyName: One Step Apply Vendor Form
+SystemName: Pages.OneStepApplyVendor
+Version: 1.0
+SupportedVersions: 3.90
+Author: https://github.com/aram-aramyan
+DisplayOrder: 1
+FileName: Nop.Plugin.Pages.OneStepApplyVendor.dll
+Description: A new apply vendor page with additional fields and anonymous access

@@ -1,0 +1,75 @@
+﻿@model Nop.Plugin.Widgets.CSlider.Models.SlideConfigModel
+@using Nop.Web.Framework;
+
+@Html.ValidationSummary(false)
+@Html.HiddenFor(model => model.Id)
+
+@if (ViewBag.RefreshPage == true)
+{
+    <script type="text/javascript">
+        try {window.opener.document.forms['@(ViewBag.formId)'].@(ViewBag.btnId).click();}
+        catch (e){}
+        window.close();
+    </script>
+}
+
+<div class="panel-group">
+    <div class="panel panel-default panel-popup">
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-sm-3">
+                    @Html.NopLabelFor(model => model.PictureId)
+                </div>
+                <div class="col-sm-9">
+                    @Html.NopEditorFor(model => model.PictureId)
+                    @Html.ValidationMessageFor(model => model.PictureId)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    @Html.NopLabelFor(model => model.Title)
+                </div>
+                <div class="col-sm-9">
+                    @Html.NopEditorFor(model => model.Title)
+                    @Html.ValidationMessageFor(model => model.Title)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    @Html.NopLabelFor(model => model.Content)
+                </div>
+                <div class="col-sm-9">
+                    @Html.NopTextAreaFor(model => model.Content)
+                    @Html.ValidationMessageFor(model => model.Content)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    @Html.NopLabelFor(model => model.Link)
+                </div>
+                <div class="col-sm-9">
+                    @Html.NopEditorFor(model => model.Link)
+                    @Html.ValidationMessageFor(model => model.Link)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    @Html.NopLabelFor(model => model.ButtonText)
+                </div>
+                <div class="col-sm-9">
+                    @Html.NopEditorFor(model => model.ButtonText)
+                    @Html.ValidationMessageFor(model => model.ButtonText)
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-3">
+                    @Html.NopLabelFor(model => model.Order)
+                </div>
+                <div class="col-sm-9">
+                    @Html.NopEditorFor(model => model.Order)
+                    @Html.ValidationMessageFor(model => model.Order)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
