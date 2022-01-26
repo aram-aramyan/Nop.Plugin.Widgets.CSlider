@@ -1,3 +1,7 @@
+# Status
+
+This project is no longer actively developed.
+
 # Nop.Plugin.Widgets.CSlider
 
 CSlider plugin allows you to add unlimited slides with image, title and description to your NopCommerce powered website.
